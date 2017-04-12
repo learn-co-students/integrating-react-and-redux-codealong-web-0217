@@ -36,8 +36,8 @@ function render(){
 }
 
 const store = createStore(changeCount);
-let button = document.getElementById('button');
+let b = document.getElementById('button');
 
-button.addEventListener('click', function() {
+b.addEventListener('click', function() {
   store.dispatch({ type: 'INCREASE_COUNT' })
 });
